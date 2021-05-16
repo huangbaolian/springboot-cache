@@ -3,15 +3,17 @@ package com.hbl.cache.bean;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.sql.Date;
+import java.io.Serializable;
+import java.util.Date;
 
-public class Employee {
+
+public class Employee implements Serializable {
     private Integer id;
     private String lastName;
     private String email;
     private Integer gender;
     private Integer dId;
-    @DateTimeFormat
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birth;
 
     public Employee() {
