@@ -54,7 +54,10 @@
                 @CacheConfig(cacheNames="emp")//抽取缓存的公共配置
 3.整合redis作为缓存
     Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件
-
+    引入starter
+    配置redis:spring.redis.host=127.0.0.1
+    测试缓存
+        默认是序列化的value, 自定义CacheManager
 
 二、springboot与消息
 
